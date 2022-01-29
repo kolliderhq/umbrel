@@ -455,6 +455,8 @@ for template in "${NGINX_CONF_FILE}" "${BITCOIN_CONF_FILE}" "${LND_CONF_FILE}" "
   sed -i "s/<app-bitfeed-api-port>/${APP_BITFEED_API_PORT}/g" "${template}"
   sed -i "s/<app-kollider-ip>/${APP_KOLLIDER_IP}/g" "${template}"
   sed -i "s/<app-kollider-port>/${APP_KOLLIDER_PORT}/g" "${template}"
+  sed -i "s/<app-kollider-ws-ip>/${APP_KOLLIDER_WS_IP}/g" "${template}"
+  sed -i "s/<app-kollider-hh-ip>/${APP_KOLLIDER_HH_IP}/g" "${template}"
 done
 
 ##########################################################
